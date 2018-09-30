@@ -1,26 +1,28 @@
-# VirtualBox Accessable Starter
+# VirtualBox Accessible Starter
 
-This small and very simple application solves most importent accessability ishue of [VirtualBox Virtualisation selution](http://virtualbox.org), and makes it accessable for screenreader users,
-It Can make accessable guest controls in vm window, that is fully unaccessable for blind users in new vbox versions by starting vm by special way.
+This small and very simple application solves the most important accessibility issue of the [VirtualBox Virtualization solution](http://virtualbox.org) and makes it accessible to screen reader users.  
+It Can make guest controls in the VM window accessible by starting VBox in a special way, as these controls are completely inaccessible for blind users in new versions of VBox.
 
-## details
+## Details
 
-The cause of inaccessability of guest controls is that vm process is hardened to prevent other applications to crash the vm.
-To work with app, ScreenReader need to enject code to it's process. It can not to do it with protected vm process.
-VBox has salution of this problem. This is a special vm running mode, called "separate" mode.
-In this mode, VirtualBox starts vm in background mode and then start interface to control it in separate process.
-This gui process is not hardened and accessable for many screenreaders. The hardened vm process are staying in background.
+The cause of inaccessibility of guest controls is that the VM process is reinforced to prevent other applications from crashing the VM.  
+To work with an app, a screen reader needs to inject code into the process of that app. It cannot however do it to a protected VM process.  
+VBox has a solution for this problem. This is a special VM running mode called the Separate mode.  
+In this mode, VirtualBox starts the VM in background mode and then starts the interface to control it in a separate process.  
+This GUI process is not reinforced and is accessible for many screen readers. The reinforced VM process stays in background.
 
-This app makes that easily.
-You need only start this app and then double click on your vm name or press enter key on it. App automaticly starts it by passing the "--type separate" command line argument to VBoxManage.
+This app makes that easy.  
+You need only to start this app and then double-click your VM name or press the Enter key after focusing it. The app automatically starts the VM by passing the `--type separate` command-line argument to VBoxManage.
 
-## Build
+## Building
 
 To build this app:
-1. Download VisualStudeo 2010 or higher. It can be iwen unregistered version. We need only command line tools, bundled with it. Warning! You must install visual basic component because this app written on VisualBasic.
-2. Open the visual studeo command line and then change directory to download place.
-3. Run:
+1. Download [https://visualstudio.com](Microsoft Visual Studio 2010 or higher). It can be a demo version or Visual Studio Community Edition. We need only command-line tools bundled with it. **Warning**! You must install the Visual Basic component as this app is written in Visual Basic.
+2. Open the Visual Studio Command Prompt and then change directory to the folder where you downloaded or cloned the app.
+3. Run the following:
 `MsBuild VirtualBoxAccessableStarter.vbproj`
-4. Builded file can be found in bin\release dir.
+4. The resulting file can be found in the `bin/release` folder.
 
-
+## License
+This software is distributed under the GNU GPL V3 license (see the License file in the root of the repository).  
+Copyrihgt © 2018, Ilya Paschuk.
