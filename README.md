@@ -1,3 +1,5 @@
+  # VirtualBox Accessible Starter
+=======
 # VirtualBox Accessible Starter
 
 This small and very simple application solves the most important accessibility issue of the [VirtualBox Virtualization solution](http://virtualbox.org) and makes it accessible to screen reader users.  
@@ -12,6 +14,7 @@ In this mode, VirtualBox starts the VM in background mode and then starts the in
 This GUI process is not reinforced and is accessible for many screen readers. The reinforced VM process stays in background.
 
 This app makes that easy.  
+
 You need only to start this app and then double-click your VM name or press the Enter key after focusing it. The app automatically starts the VM by passing the `--type separate` command-line argument to VBoxManage.
 
 ## Building
@@ -21,8 +24,9 @@ To build this app:
 2. Open the Visual Studio Command Prompt and then change directory to the folder where you downloaded or cloned the app.
 3. Run the following:
 `MsBuild VirtualBoxAccessableStarter.vbproj`
-4. The resulting file can be found in the `bin/release` folder.
+4. The resulting file can be found in the `bin/release` folder. Warning! The `Interop.VirtualBox.dll` file, placed in building results directory, is the VirtualBox Main Api library. It must be placed in same directory with application file to it will be able to communicate with vbox.
 
 ## License
 This software is distributed under the GNU GPL V3 license (see the License file in the root of the repository).  
-Copyrihgt Â© 2018, Ilya Paschuk.
+Copyrihgt © 2018, Ilya Paschuk.
+=======
