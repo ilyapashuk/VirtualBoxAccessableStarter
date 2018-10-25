@@ -1,22 +1,24 @@
 ﻿Module BoxHandler
-    Public Sub StartMachine(ByRef VMachine As String, ByVal SessionName As String)
-        Dim VBox As New VirtualBox.VirtualBox
-        Dim VSession As New VirtualBox.Session
+    Public BoxClient As VirtualBox.VirtualBoxClient
+
+    Public Sub StartMachine(ByRef Machine As VirtualBox.IMachine, ByVal SessionName As String)
+        If Not (Machine.State = VirtualBox.MachineState.MachineState_PoweredOff Or Machine.State = VirtualBox.MachineState.MachineState_Aborted Or Machine.State = VirtualBox.MachineState.MachineState_Saved) Then
+            Exit Sub
+        End If
+        Try
+            Machine.LaunchVMProcess(BoxClient.Session, SessionName, "")
+
+        Catch ex As Exception
+            MsgBox(ex.Message, vbCritical, LocalizeString("error"))
+        End Try
+    End Sub
+    Structure MachineListItem
         Dim Machine As VirtualBox.IMachine
-        Machine = VBox.FindMachine(VMachine)
-        Machine.LaunchVMProcess(VSession, SessionName, "")
-    End Sub
-    Public Sub StartVmByName(ByVal VmName As String, ByVal SessionName As String)
-        Dim VBX As New VirtualBox.VirtualBox
-        Dim OurMachine As VirtualBox.IMachine
-        For Each VM As VirtualBox.IMachine In VBX.Machines
-            If VM.Name = VmName Then
-                OurMachine = VM
-                Exit For
+        Public Overrides Function ToString() As String
+            If Not (Machine.State = VirtualBox.MachineState.MachineState_PoweredOff Or Machine.State = VirtualBox.MachineState.MachineState_Aborted Or Machine.State = VirtualBox.MachineState.MachineState_Saved) Then
+                Return Machine.Name & "(running or busy)"
             End If
-        Next
-        Dim OurMachineId As String
-        OurMachineId = OurMachine.Id
-        StartMachine(OurMachineId, SessionName)
-    End Sub
+            Return Machine.Name
+        End Function
+    End Structure
 End Module

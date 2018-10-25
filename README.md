@@ -15,8 +15,8 @@ This GUI process is not reinforced and is accessible for many screen readers. Th
 
 This app makes that easy.  
 
-You need only to start this app and then double-click your VM name or press the Enter key after focusing it. The app automatically starts the VM by passing the `--type separate` command-line argument to VBoxManage.
-
+You need only to start this app and then double-click your VM name or press the Enter key after focusing it. The app automatically starts the VM by passing the `separate` argument to VirtualBox Main Api
+You can use the context menu to start machines in standard and background mode. Also, if machine is in saved state, you can reset it's state using this menu.
 ## Building
 
 To build this app:
@@ -24,7 +24,7 @@ To build this app:
 2. Open the Visual Studio Command Prompt and then change directory to the folder where you downloaded or cloned the app.
 3. Run the following:
 `MsBuild VirtualBoxAccessableStarter.vbproj`
-4. The resulting file can be found in the `bin/release` folder. Warning! The `Interop.VirtualBox.dll` file, placed in building results directory, is the VirtualBox Main Api library. It must be placed in same directory with application file to it will be able to communicate with vbox.
+4. The resulting file can be found in the `bin/release` folder. Warning! The `Interop.VirtualBox.dll` file, placed in building results directory, is the VirtualBox Main Api library. It must be placed in same directory with application file to it will be able to communicate with VirtualBox. Also you need to copy localisations files if you vont to app will be fully localized.
 
 ## License
 This software is distributed under the GNU GPL V3 license (see the License file in the root of the repository).  
