@@ -147,4 +147,15 @@
 
         End Try
     End Sub
+
+    Private Sub SnapshotsManagerMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SnapshotsManagerMenuItem.Click
+        If ListBox1.SelectedItem Is Nothing Then
+            Exit Sub
+        End If
+        Dim OurItem As MachineListItem
+        OurItem = Me.ListBox1.SelectedItem
+        Dim SForm As New SnapshotManager
+        SForm.MachineToOperate = OurItem.Machine
+        SForm.ShowDialog()
+    End Sub
 End Class

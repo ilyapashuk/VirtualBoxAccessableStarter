@@ -17,6 +17,13 @@ This app makes that easy.
 
 You need only to start this app and then double-click your VM name or press the Enter key after focusing it. The app automatically starts the VM by passing the `separate` argument to VirtualBox Main Api
 You can use the context menu to start machines in standard and background mode. Also, if machine is in saved state, you can reset it's state using this menu.
+Additionally, you can manage the snapshots of any machine.
+To open the snapshots, use the context menu of the machine.
+The snapshots manager is very simple. It's main part is tree of vm's snapshots. There are "current state" item in this tree.
+To take new snapshot, use context menu of "current state" item.
+To restore or delete any snapshot, use it's context menu.
+
+Warning! Now the app can't track the progress of VirtualBox operations and can hang up if operation will long. Please don't kill it.
 ## Building
 Warning: this app must be built for spesific version of vbox. For example, the app, builtn for 5x version, will not work with 6x version do to changes in it's com api.
 To build this app, you must have virtualBox correctly installed even if you already have client library.

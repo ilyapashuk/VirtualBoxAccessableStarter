@@ -118,55 +118,28 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="RefreshMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+  <data name="TakeMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
   </data>
-  <data name="RefreshMenuItem.Text" xml:space="preserve">
-    <value>обновить список</value>
+  <data name="TakeMenuItem.Text" xml:space="preserve">
+    <value>сделать</value>
   </data>
-  <data name="ExitMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+  <data name="CurrentStateMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>117, 26</value>
   </data>
-  <data name="ExitMenuItem.Text" xml:space="preserve">
-    <value>выход</value>
+  <data name="RestoreMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
   </data>
-  <data name="FileMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+  <data name="RestoreMenuItem.Text" xml:space="preserve">
+    <value>восстановить</value>
   </data>
-  <data name="FileMenu.Text" xml:space="preserve">
-    <value>файл</value>
+  <data name="DeleteMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 22</value>
   </data>
-  <data name="AccessableRunMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
+  <data name="DeleteMenuItem.Text" xml:space="preserve">
+    <value>удалить</value>
   </data>
-  <data name="AccessableRunMenuItem.Text" xml:space="preserve">
-    <value>запустить в доступном режиме</value>
-  </data>
-  <data name="StandardRunMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
-  </data>
-  <data name="StandardRunMenuItem.Text" xml:space="preserve">
-    <value>запустить в стандартном режиме</value>
-  </data>
-  <data name="BackgroundRunMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
-  </data>
-  <data name="BackgroundRunMenuItem.Text" xml:space="preserve">
-    <value>запустить в фоновом режиме</value>
-  </data>
-  <data name="ResetStateMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
-  </data>
-  <data name="ResetStateMenuItem.Text" xml:space="preserve">
-    <value>сбросить сохранённое состояние</value>
-  </data>
-  <data name="SnapshotsManagerMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
-  </data>
-  <data name="SnapshotsManagerMenuItem.Text" xml:space="preserve">
-    <value>снимки</value>
-  </data>
-  <data name="StopMachineContextMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 114</value>
+  <data name="SnapshotMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>145, 48</value>
   </data>
 </root>

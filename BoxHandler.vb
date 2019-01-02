@@ -6,7 +6,7 @@
             Exit Sub
         End If
         Try
-            Machine.LaunchVMProcess(BoxClient.Session, SessionName, "")
+            ObserveProgress(Machine.LaunchVMProcess(BoxClient.Session, SessionName, ""))
 
         Catch ex As Exception
             MsgBox(ex.Message, vbCritical, LocalizeString("error"))
@@ -21,4 +21,22 @@
             Return Machine.Name
         End Function
     End Structure
+    Public Sub ObserveErrorInfo(ByVal VError As VirtualBox.IVirtualBoxErrorInfo)
+        MsgBox(VError.Text, vbCritical, "VirtualBoxError")
+        If Not VError.Next Is Nothing Then
+            ObserveErrorInfo(VError.Next)
+        End If
+    End Sub
+    Public Sub ObserveProgress(ByVal VProgress As VirtualBox.IProgress)
+        If VProgress.Completed Then
+            If Not VProgress.ResultCode = 0 Then
+                ObserveErrorInfo(VProgress.ErrorInfo)
+            End If
+            Exit Sub
+        End If
+        VProgress.WaitForCompletion(-1)
+        If Not VProgress.ResultCode = 0 Then
+            ObserveErrorInfo(VProgress.ErrorInfo)
+        End If
+    End Sub
 End Module

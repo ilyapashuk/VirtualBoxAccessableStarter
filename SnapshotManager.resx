@@ -117,56 +117,112 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;TakeMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>snapshots</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="RefreshMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
   </data>
-  <data name="RefreshMenuItem.Text" xml:space="preserve">
-    <value>обновить список</value>
+  <data name="&gt;&gt;SnapshotMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ExitMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>178, 22</value>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="ExitMenuItem.Text" xml:space="preserve">
-    <value>выход</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>SnapshotManager</value>
   </data>
-  <data name="FileMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 20</value>
+  <data name="&gt;&gt;CurrentStateMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ContextMenuStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="FileMenu.Text" xml:space="preserve">
-    <value>файл</value>
+  <data name="&gt;&gt;RestoreMenuItem.Name" xml:space="preserve">
+    <value>RestoreMenuItem</value>
   </data>
-  <data name="AccessableRunMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
+  <data name="&gt;&gt;TreeView1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TreeView, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="AccessableRunMenuItem.Text" xml:space="preserve">
-    <value>запустить в доступном режиме</value>
+  <data name="&gt;&gt;CurrentStateMenu.Name" xml:space="preserve">
+    <value>CurrentStateMenu</value>
   </data>
-  <data name="StandardRunMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
+  <data name="&gt;&gt;DeleteMenuItem.Name" xml:space="preserve">
+    <value>DeleteMenuItem</value>
   </data>
-  <data name="StandardRunMenuItem.Text" xml:space="preserve">
-    <value>запустить в стандартном режиме</value>
+  <data name="&gt;&gt;TreeView1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="BackgroundRunMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>292, 273</value>
   </data>
-  <data name="BackgroundRunMenuItem.Text" xml:space="preserve">
-    <value>запустить в фоновом режиме</value>
+  <data name="RestoreMenuItem.Text" xml:space="preserve">
+    <value>restore</value>
   </data>
-  <data name="ResetStateMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
+  <data name="TakeMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 22</value>
   </data>
-  <data name="ResetStateMenuItem.Text" xml:space="preserve">
-    <value>сбросить сохранённое состояние</value>
+  <data name="&gt;&gt;DeleteMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="SnapshotsManagerMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>245, 22</value>
+  <data name="TakeMenuItem.Text" xml:space="preserve">
+    <value>take</value>
   </data>
-  <data name="SnapshotsManagerMenuItem.Text" xml:space="preserve">
-    <value>снимки</value>
+  <data name="DeleteMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 22</value>
   </data>
-  <data name="StopMachineContextMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>246, 114</value>
+  <data name="&gt;&gt;TreeView1.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
+  <data name="DeleteMenuItem.Text" xml:space="preserve">
+    <value>delete</value>
+  </data>
+  <data name="&gt;&gt;SnapshotMenu.Name" xml:space="preserve">
+    <value>SnapshotMenu</value>
+  </data>
+  <data name="TreeView1.AccessibleName" xml:space="preserve">
+    <value>SnapshotsBox</value>
+  </data>
+  <data name="&gt;&gt;TreeView1.Name" xml:space="preserve">
+    <value>TreeView1</value>
+  </data>
+  <data name="&gt;&gt;RestoreMenuItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="CurrentStateMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 26</value>
+  </data>
+  <data name="&gt;&gt;TakeMenuItem.Name" xml:space="preserve">
+    <value>TakeMenuItem</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TreeView1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="RestoreMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 22</value>
+  </data>
+  <data name="TreeView1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="TreeView1.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TreeView1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>292, 273</value>
+  </data>
+  <data name="SnapshotMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 48</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="SnapshotMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>159, 17</value>
+  </metadata>
+  <metadata name="CurrentStateMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

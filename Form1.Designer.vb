@@ -35,6 +35,7 @@ Partial Class Form1
         Me.StandardRunMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BackgroundRunMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResetStateMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SnapshotsManagerMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RefreshTimer = New System.Windows.Forms.Timer(Me.components)
         Me.AppMenu.SuspendLayout()
         Me.StopMachineContextMenu.SuspendLayout()
@@ -76,7 +77,7 @@ Partial Class Form1
         'StopMachineContextMenu
         '
         resources.ApplyResources(Me.StopMachineContextMenu, "StopMachineContextMenu")
-        Me.StopMachineContextMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AccessableRunMenuItem, Me.StandardRunMenuItem, Me.BackgroundRunMenuItem, Me.ResetStateMenuItem})
+        Me.StopMachineContextMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AccessableRunMenuItem, Me.StandardRunMenuItem, Me.BackgroundRunMenuItem, Me.ResetStateMenuItem, Me.SnapshotsManagerMenuItem})
         Me.StopMachineContextMenu.Name = "StopMachineContextMenu"
         '
         'AccessableRunMenuItem
@@ -99,10 +100,15 @@ Partial Class Form1
         resources.ApplyResources(Me.ResetStateMenuItem, "ResetStateMenuItem")
         Me.ResetStateMenuItem.Name = "ResetStateMenuItem"
         '
+        'SnapshotsManagerMenuItem
+        '
+        resources.ApplyResources(Me.SnapshotsManagerMenuItem, "SnapshotsManagerMenuItem")
+        Me.SnapshotsManagerMenuItem.Name = "SnapshotsManagerMenuItem"
+        '
         'RefreshTimer
         '
         Me.RefreshTimer.Enabled = True
-        Me.RefreshTimer.Interval = 5000
+        Me.RefreshTimer.Interval = 10000
         '
         'Form1
         '
@@ -132,5 +138,6 @@ Partial Class Form1
     Friend WithEvents StandardRunMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents BackgroundRunMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents RefreshTimer As System.Windows.Forms.Timer
+    Friend WithEvents SnapshotsManagerMenuItem As System.Windows.Forms.ToolStripMenuItem
 
 End Class
